@@ -360,8 +360,52 @@ nav.nav {
     }
 }
 
-/* experience */
+/* Skills */
+.section-skills {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    background-image: url(./img/);
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
 
+.section-skills-title {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section-skills-title::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.skills {
+    margin-bottom: 4em;
+}
+
+.skill {
+    max-width: 500px;
+    margin: 0 auto 2em;
+}
+
+@media (min-width: 800px) {
+    .skills {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto 4em;
+    }
+    .skill+.skill {
+        margin-left: 5em;
+    }
+}
+
+/* experience */
 .section-exp {
     background-color: var(--clr-dark);
     color: var(--clr-light);
