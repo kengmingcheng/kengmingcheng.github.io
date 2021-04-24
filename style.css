@@ -450,16 +450,10 @@ nav.nav {
 }
 
 .career, .education {
-    /* unvail border */
-    /* border: green solid 1px; */
-
     margin: 4em;
 }
 
 .career-pic, .edu-pic {
-    /* unvail border */
-    /* border: red solid 2px; */
-
     border-radius: 20px;
     display: block;
     margin: auto;
@@ -582,7 +576,13 @@ nav.nav {
 }
 
 .social-list-item {
-    margin: 1em;
+    margin: 0.3em;
+}
+
+@media(min-width:800px) {
+    .social-list-item {
+        margin: 1em;
+    }
 }
 
 
