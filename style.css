@@ -416,6 +416,7 @@ nav.nav {
 }
 
 /* experience */
+
 .section-exps {
     background-color: var(--clr-light);
     color: var(--clr-light);
@@ -562,7 +563,9 @@ nav.nav {
 }
 
 .social-list-link {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: min-content;
+
     color: inherit;
     padding: 0.5em;
     font-size: var(--fs-h2);
@@ -576,7 +579,7 @@ nav.nav {
 }
 
 .social-list-item {
-    margin: 0.3em;
+    margin: 0em;
 }
 
 @media(min-width:800px) {
