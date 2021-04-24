@@ -567,7 +567,7 @@ nav.nav {
     grid-template-columns: min-content;
 
     color: inherit;
-    padding: 0.5em;
+    padding: 0.2em;
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
 
@@ -582,7 +582,16 @@ nav.nav {
     margin: 0em;
 }
 
+@media(min-width:350px) {
+    .social-list-link {
+        padding: 0.3em;
+    }
+}
+
 @media(min-width:800px) {
+    .social-list-link {
+        padding: 0.5em;
+    }
     .social-list-item {
         margin: 1em;
     }
