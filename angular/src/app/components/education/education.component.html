@@ -1,0 +1,18 @@
+<div *ngIf="edu" class="education">
+    <div class="edu-pic">
+        <a href="{{ edu.orgLink }}" class="edu-link" target="_blank">
+            <img src="{{ edu.picLink }}" alt="{{ edu.org }}">
+        </a>
+    </div>
+    <div class="edu-column">
+        <div class="edu-title">
+            <p>{{ edu.degree}} in {{ edu.major }}, {{ edu.org }}</p>
+        </div>
+        <div class="edu-subtitle">
+            <p>{{ edu.location }}</p>
+        </div>
+        <div class="edu-text">
+            <p *ngFor="let achievement of edu.achievements">{{ achievement }}</p>
+        </div>                        
+    </div>
+</div>

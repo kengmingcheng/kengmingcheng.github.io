@@ -1,0 +1,15 @@
+   <!-- Experience -->
+   <section class="section-exps" id="exps">
+    <h2 class="section-title section-exps-title">My Journey</h2>
+    <div class="exps">
+        <div class="careers">
+          <app-career *ngFor="let career of careers" [career]="career" ></app-career>
+        </div>
+        <div class="career-divider" id="edus">
+            <hr class="divider">
+        </div>
+        <div class="educations">
+            <app-education *ngFor="let edu of educations" [edu]="edu"></app-education>
+        </div>
+    </div>
+</section>

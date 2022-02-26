@@ -1,0 +1,17 @@
+<div *ngIf="career" class="career">
+    <div class="career-pic">
+        <a href="{{ career.orgLink }}" class="career-link" target="_blank">
+            <img src="{{ career.picLink }}" alt="{{ career.org }}"></a>
+    </div>
+    <div class="career-column">
+        <div class="career-job-title">
+            <p>{{ career.title }}, {{ career.org }}</p>
+        </div>
+        <div class="career-job-subtitle">
+            <p>{{ career.location }}</p>
+        </div>
+        <div class="career-text">
+            <p *ngFor="let achievement of career.achievements" >{{ achievement }}</p>
+        </div>
+    </div>
+</div>

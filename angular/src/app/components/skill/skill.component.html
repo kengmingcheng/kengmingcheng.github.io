@@ -1,0 +1,9 @@
+<section class="section-skills" id="skills">
+    <h2 class="section-title section-skills-title">What I do</h2>
+    <div class="skills">
+        <div *ngFor="let skill of skills" class="skill">
+            <p *ngIf="skill" class="skill-job-title"><strong>{{ skill.skillTitle }}</strong></p>
+            <p *ngIf="skill" >{{ skill.description }}</p>
+        </div>
+    </div>
+</section>
