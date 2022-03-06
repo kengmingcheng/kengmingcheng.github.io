@@ -1,0 +1,39 @@
+.career, .education {
+    margin: 4em;
+}
+
+.career-pic, .edu-pic {
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+@media (min-width: 800px) {
+    .career, .education {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 300px;
+    }
+    .career-pic, .edu-pic {
+        width: 25%;
+        height: auto;
+        margin: 5% auto;
+        flex: 1;
+    }
+    .career-column, .edu-column {
+        flex: 2;
+        text-align: left;
+        margin-left: 5em;
+    }
+
+    .career-job-title, .edu-title {
+        font-weight: var(--fw-bold);
+    }
+    
+    .career-text, .edu-text {
+        margin-top: 3em;
+    }
+}

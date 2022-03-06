@@ -7,10 +7,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { ExpComponent } from './components/exp/exp.component';
-import { RootViewComponent } from './views/root-view/root-view.component';
+import { AboutMeViewComponent } from './views/about-me-view/about-me-view.component';
 import { CareerComponent } from './components/career/career.component';
 import { EducationComponent } from './components/education/education.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BlogViewComponent } from './views/blog-view/blog-view.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +20,11 @@ import { FooterComponent } from './components/footer/footer.component';
     SidebarComponent,
     SkillComponent,
     ExpComponent,
-    RootViewComponent,
+    AboutMeViewComponent,
     CareerComponent,
     EducationComponent,
-    FooterComponent
+    FooterComponent,
+    BlogViewComponent
   ],
   imports: [
     BrowserModule,

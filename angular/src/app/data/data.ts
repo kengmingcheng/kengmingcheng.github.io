@@ -1,5 +1,8 @@
 import { Skill, Career, Education } from './interfaces'
 
+export const introTxt: string = `A long journey involved in my life. From exploring classic science to navigating the digital network, My curiosity never stops its paces seeking a new field. Now, I've been working on back-end software development for more than one year, mainly responsible for the SMS telecom system at CIeNet. 
+`;
+
 export const SKILLS: Skill[] = [
     {
         skillTitle: 'Softeware Development',
@@ -25,9 +28,9 @@ export const CAREERS: Career[] = [
         dateOfEmployment: "",
         achievements: [
             "• Responsible for distributed systems for telecom SMS processing which requires asynchronous, message-driven and producer-consummer handlings.",
-            "Developed WorkDo, an all-around workplace application, with implementations of AWS services such as EC2, S3, Cassandra, Rekognition, etc.",
-            "• Involved in garbage collection(GC) tuning and memory management based on in/outbounding traffic and survival rate of living objects. The outcome shows more than 70% reduction of overall GC duration.",
-            "• Enhanced and simplified Java build process by eliminating 50% redundant syntax as well as correctly implementing concurrent and incremental compilation which accelerates at least 20% of build process.",
+            "Develope WorkDo, an all-around workplace application, with implementations of AWS services such as EC2, S3, Cassandra, Rekognition, etc.",
+            "• Involve in garbage collection(GC) tuning and memory management based on in/outbounding traffic and survival rate of living objects. The outcome shows more than 70% reduction of overall GC duration.",
+            "• Enhance and simplify Java build process by eliminating 50% redundant syntax as well as correctly implementing concurrent and incremental compilation which accelerates at least 20% of build process.",
             "• Applied skills: Java EE, MySQL, Hibernate",
         ]
     },

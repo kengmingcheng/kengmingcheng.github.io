@@ -15,16 +15,30 @@ export class ExpComponent implements OnInit {
   constructor(private webService: WebService) { }
 
   ngOnInit(): void {
-    this.careers = this.getCareers();
-    this.educations = this.getEducations();
+    this.getCareers();
+    this.getEducations();
   }
 
-  getCareers(): Career[] {
-    return this.webService.getCareers();
+  // getCareers(): Career[] {
+  //   return this.webService.getCareers();
+  // }
+
+  // getEducations(): Education[] {
+  //   return this.webService.getEducations();
+  // }
+
+  getCareers(): void {
+    this.webService.getCareers()
+    .subscribe((careers : Career[]) => {
+      this.careers = careers;
+    });
   }
 
-  getEducations(): Education[] {
-    return this.webService.getEducations();
+  getEducations(): void {
+    this.webService.getEducations()
+    .subscribe((edu : Education[]) => {
+      this.educations = edu;
+    });
   }
 
 }

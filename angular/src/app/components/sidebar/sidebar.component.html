@@ -1,11 +1,6 @@
 <nav class="nav">
     <ul class="nav-list">
         <li class="nav-item" *ngFor="let nav of navs">
-            <a href="{{nav.link}}" class="nav-link" (click)="collapseSideBar($event)">{{nav.name}}</a></li>
-        <!-- <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">Profile</a></li>
-        <li class="nav-item"><a href="#exps" class="nav-link">Career</a></li>
-        <li class="nav-item"><a href="#edus" class="nav-link">Education</a></li>
-        <li class="nav-item"><a href="#works" class="nav-link">My Works</a></li> -->
+            <a class="nav-link" (click)="navigate($event, nav.link)">{{nav.name}}</a></li>
     </ul>
 </nav>

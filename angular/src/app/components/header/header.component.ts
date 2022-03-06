@@ -1,40 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewEncapsulation, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('toggleButton') static toggleButton: ElementRef;
 
-  ngOnInit(): void {
-    let navToggle = document.querySelector('.nav-toggle')!;
-    let nav = document.querySelector('.nav')!;
-    let navLinks = document.querySelectorAll('.nav-link')!;
+  constructor(private renderer: Renderer2) { 
 
-    // navToggle.addEventListener('click', (event: any) =>{
-    //     document.body.classList.toggle('nav-open');
-    //     event.stopPropagation();
-    // });
-
-    // navLinks.forEach(link => {
-    //     link.addEventListener('click', () =>  {
-    //         document.body.classList.remove('nav-open');
-    //     });
-        
-    // });
- 
-    document.addEventListener('click', function(event: Event){
+    this.renderer.listen('document', 'click', (event: Event) =>{
       if (isVisible(event) && !(event.target as Element).className.startsWith('nav')) {
         document.body.classList.remove('nav-open');
       }
     });
+  }
 
-    // document.addEventListener('click', function(event: Event){
-    //   console.log((event.target as Element).className);
-    // });
+  ngOnInit(): void {
   }
 
   expandSidebar(event : Event) : void {

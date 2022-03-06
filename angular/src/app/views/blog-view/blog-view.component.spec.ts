@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RootViewComponent } from './root-view.component';
+import { BlogViewComponent } from './blog-view.component';
 
-describe('RootViewComponent', () => {
-  let component: RootViewComponent;
-  let fixture: ComponentFixture<RootViewComponent>;
+describe('BlogViewComponent', () => {
+  let component: BlogViewComponent;
+  let fixture: ComponentFixture<BlogViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RootViewComponent ]
+      declarations: [ BlogViewComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RootViewComponent);
+    fixture = TestBed.createComponent(BlogViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

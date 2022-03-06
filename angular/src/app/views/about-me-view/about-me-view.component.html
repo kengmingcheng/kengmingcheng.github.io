@@ -1,7 +1,7 @@
 <app-header></app-header>
 <!-- Body -->
 <!-- Introduction -->
-<section class="intro" id="home">
+<section class="intro" id="home" [style.background-image]="'url('+backgroundImage+')'">
     <h1 class="section-title section-title-intro" id="home">Hey, I am <strong>Keng-Ming Cheng</strong></h1>
     <p class="section-subtitle-intro">Back-end Software Developer</p>
     <div class="intro-img"></div>
@@ -10,10 +10,10 @@
 
 <!-- About -->
 <section class="section-about" id="about">
-    <h2 class="section-title section-about-title">Who I am</h2>
+    <h2 class="section-title section-about-title">About Me</h2>
     <p class="section-about-subtitle">A Back-end Engineer From Taiwan</p>
     <div class="about-body">
-        <p class="section-about-text">I enjoy exploring new concepts, new advantures. Before being a software engineer, I was also invloved in science research and AI development. </p>
+        <p class="section-about-text"> {{briefIntro}} </p>
     </div>
     <img src="assets/img/about_taipei_img.JPG" alt="K.M. Cheng" class="about-img">
 </section>

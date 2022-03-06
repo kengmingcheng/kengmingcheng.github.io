@@ -14,11 +14,16 @@ export class SkillComponent implements OnInit {
   constructor(private webService: WebService) { }
 
   ngOnInit(): void {
-    this.skills = this.getSkills();
+    this.getSkills();
+    // this.skills = this.getSkills();
   }
 
-  getSkills(): Skill[] {
-    return this.webService.getSkills();
+  getSkills(): void {
+    // let skills : Skill[];
+    this.webService.getSkills()
+    .subscribe((skills : Skill[]) => {
+      this.skills = skills;
+    })
   }
 
 }

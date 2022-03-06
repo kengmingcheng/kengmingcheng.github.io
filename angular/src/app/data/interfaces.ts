@@ -23,3 +23,8 @@ export interface Education extends experience {
     major: string;
     achievements: string[];
 }
+
+export interface socialLink {
+    iconClass?: string;
+    link: string;
+}
