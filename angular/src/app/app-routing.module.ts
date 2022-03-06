@@ -4,7 +4,8 @@ import { AboutMeViewComponent } from './views/about-me-view/about-me-view.compon
 import { aboutMePath } from './data/constant';
 
 const routes: Routes = [
-  {path: aboutMePath , component: AboutMeViewComponent}
+  { path: aboutMePath , component: AboutMeViewComponent },
+  { path: '',   redirectTo: `/${aboutMePath}`, pathMatch: 'full' }
 ];
 
 const extraOption: ExtraOptions = {
