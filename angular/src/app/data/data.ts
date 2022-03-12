@@ -1,7 +1,30 @@
-import { Skill, Career, Education } from './interfaces'
+import { Skill, Career, Education, SocialLink } from './interfaces'
 
 export const introTxt: string = `A long journey involved in my life. From exploring classic science to navigating the digital network, My curiosity never stops its paces seeking a new field. Now, I've been working on back-end software development for more than one year, mainly responsible for the SMS telecom system at CIeNet. 
 `;
+
+export const SOCIALLINKS: SocialLink[] = [
+    {
+        iconClass: 'fab fa-linkedin',
+        link: 'https://www.linkedin.com/in/chengkm'
+    },
+    {
+        iconClass: 'fab fa-github',
+        link: 'https://github.com/kengmingcheng'
+    },
+    {
+        iconClass: 'fab fa-medium',
+        link: 'https://medium.com/@k.m.cheng'
+    },
+    {
+        iconClass: 'fab fa-instagram',
+        link: 'https://www.instagram.com/photobykmc'
+    },
+    {
+        iconClass: 'fas fa-envelope',
+        link: 'mailto:kengmingcheng@outlook.com'
+    }
+];
 
 export const SKILLS: Skill[] = [
     {
@@ -16,7 +39,7 @@ export const SKILLS: Skill[] = [
         skillTitle: 'Chemicals Analysis',
         description: 'From as simple as wire coat to the most complicated organic shellac, we can thoroughly dissect components of those materials with the finest analytical technologies such as GC-MS, LC-MS, and DLS. Multifaceted yet interpretable chemical composition  will be examinated.'
     }
-]
+];
 
 export const CAREERS: Career[] = [
     {
@@ -89,7 +112,7 @@ export const CAREERS: Career[] = [
             "• Exploited analytical instruments including atomic force microscopy (AFM), scanning electron microscopy (SEM), transmission electron microscopy (TEM), and photoluminescence (PL)."
         ]
     },
-]
+];
 
 export const EDUCATIONS: Education[] = [
     {
@@ -119,4 +142,4 @@ export const EDUCATIONS: Education[] = [
         picLink: 'assets/img/nctu.png',
         achievements: ["• Minored in Materials Science & Engineering"]
     },
-]
+];

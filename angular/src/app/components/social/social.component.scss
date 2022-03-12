@@ -1,16 +1,3 @@
-/* Footer */
-.footer {
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    text-align: center;
-    padding: 2em 0;
-}
-
-.footer a {
-    color: inherit;
-    text-decoration: none;
-}
-
 /* Links */
 .social-list {
     display: flex;
@@ -19,9 +6,10 @@
     margin: 0 0;
 }
 
-/* .social-list-link {
+.social-list-link {
     display: grid;
     grid-template-columns: min-content;
+    text-decoration: none;
 
     color: inherit;
     padding: 0.2em;
@@ -52,4 +40,4 @@
     .social-list-item {
         margin: 1em;
     }
-} */
+}

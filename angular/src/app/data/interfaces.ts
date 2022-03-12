@@ -24,7 +24,7 @@ export interface Education extends experience {
     achievements: string[];
 }
 
-export interface socialLink {
+export interface SocialLink {
     iconClass?: string;
     link: string;
 }
