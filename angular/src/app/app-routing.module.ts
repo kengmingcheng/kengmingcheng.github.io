@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import  * as paths from './data/constant';
 import { AboutMeViewComponent } from './views/about-me-view/about-me-view.component';
-import { aboutMePath } from './data/constant';
+import { BlogViewComponent } from './views/blog-view/blog-view.component';
 
 const routes: Routes = [
-  { path: aboutMePath , component: AboutMeViewComponent },
-  { path: '',   redirectTo: `/${aboutMePath}`, pathMatch: 'full' }
+  { path: paths.aboutMePath , component: AboutMeViewComponent },
+  { path: paths.blogPath , component: BlogViewComponent },
+  { path: '',   redirectTo: `/${paths.aboutMePath}`, pathMatch: 'full' }
 ];
 
 const extraOption: ExtraOptions = {
