@@ -1,4 +1,17 @@
+# OS
 .DS_Store
+
+# IED
+.idea
+.vscode
+
+# web
 .angular
 node_modules
 dist
+
+# Gradle
+.gradle
+build
+gradlew
+gradle.bat

@@ -50,11 +50,11 @@ export const CAREERS: Career[] = [
         picLink: 'assets/img/cienet.jpeg',
         dateOfEmployment: "",
         achievements: [
-            "• Responsible for distributed systems for telecom SMS processing which requires asynchronous, message-driven and producer-consummer handlings.",
-            "Develope WorkDo, an all-around workplace application, with implementations of AWS services such as EC2, S3, Cassandra, Rekognition, etc.",
+            "• Responsible for distributed systems for telecom SMS and OTP services which require asynchronous, message-driven, and prioritizing handlings.",
+            "• Develop WorkDo, an all-around workplace application, based off of service-oriented architecture with utilizations of AWS services such as EC2, S3, Cassandra, Rekognition, etc.",
             "• Involve in garbage collection(GC) tuning and memory management based on in/outbounding traffic and survival rate of living objects. The outcome shows more than 70% reduction of overall GC duration.",
+            "• Improve SQL query efficiency by 200% with redesigned query statements which reduce disk I/O visiting.",
             "• Enhance and simplify Java build process by eliminating 50% redundant syntax as well as correctly implementing concurrent and incremental compilation which accelerates at least 20% of build process.",
-            "• Applied skills: Java EE, MySQL, Hibernate",
         ]
     },
     {
